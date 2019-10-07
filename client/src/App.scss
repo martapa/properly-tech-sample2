@@ -1,0 +1,70 @@
+@import "bootstrap/scss/bootstrap.scss";
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,700,800,900&display=swap");
+
+html {
+  background-color: #ffffff;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  color: #5e6572;
+  font-weight: 700;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h3 {
+  color: #2d3142;
+  margin-top: 10px;
+  font-weight: 800;
+  font-size: 24px;
+}
+p {
+  font-weight: 300;
+  font-size: 15px;
+}
+col-sm-4 {
+  margin-top: 50px;
+  :hover {
+    background-color: yellow;
+  }
+}
+
+.image {
+  overflow: hidden;
+  padding-top: 66.66667%;
+  position: relative;
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+}
+
+.meta {
+  img {
+    height: 80px;
+  }
+}
+
+.my-button {
+  background: #5e6572;
+  color: #fff;
+  padding: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+
+  &:hover,
+  &:active:focus {
+    background: #4b88c5;
+    color: #fff;
+  }
+}

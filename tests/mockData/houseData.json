@@ -1,0 +1,26 @@
+{
+  "data": [
+    [
+      {
+        "_id": "5d99393f1c9d44000073dc01",
+        "address": "10 Australia Street Toronto, Ontario M5B 0A9",
+        "price": 7778000,
+        "bedrooms": 7,
+        "bathrooms": 3,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam felis odio, porttitor at faucibus ut, finibus luctus risus. Proin volutpat iaculis velit sed venenatis. Morbi ac venenatis ipsum. Nunc purus ante, vehicula ut mauris quis, mollis porta erat. Sed porttitor nibh nec dui hendrerit ullamcorper. Praesent maximus est lacus, sit amet euismod justo auctor non. Nulla euismod sapien sit amet libero dictum commodo. Integer sed erat imperdiet, ullamcorper nibh ut, pulvinar ex. Integer eget luctus purus, vitae elementum elit. Sed finibus eu nisi a commodo. Vivamus imperdiet euismod magna nec mollis. Nulla diam ex, ornare non libero ut, gravida vestibulum sapien. Proin ac facilisis dolor, a fermentum mi. Sed varius lacus a ante auctor, ut imperdiet ipsum malesuada.",
+        "floorSpace": 500,
+        "photo": "https://marta-paczkowska-properly-tech-sample.s3-us-west-2.amazonaws.com/houses/house2.jpeg"
+      },
+      {
+        "_id": "5d9939f01c9d44000073dc03",
+        "address": "456 Ipsum Street Toronto, Ontario M5A 0A9",
+        "price": 100000000,
+        "bedrooms": 100,
+        "bathrooms": 70,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam felis odio, porttitor at faucibus ut, finibus luctus risus. Proin volutpat iaculis velit sed venenatis. Morbi ac venenatis ipsum. Nunc purus ante, vehicula ut mauris quis, mollis porta erat. Sed porttitor nibh nec dui hendrerit ullamcorper. Praesent maximus est lacus, sit amet euismod justo auctor non. Nulla euismod sapien sit amet libero dictum commodo. Integer sed erat imperdiet, ullamcorper nibh ut, pulvinar ex. Integer eget luctus purus, vitae elementum elit. Sed finibus eu nisi a commodo. Vivamus imperdiet euismod magna nec mollis. Nulla diam ex, ornare non libero ut, gravida vestibulum sapien. Proin ac facilisis dolor, a fermentum mi. Sed varius lacus a ante auctor, ut imperdiet ipsum malesuada.",
+        "floorSpace": 1500,
+        "photo": "https://marta-paczkowska-properly-tech-sample.s3-us-west-2.amazonaws.com/houses/house4.jpeg"
+      }
+    ]
+  ]
+}

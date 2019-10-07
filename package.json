@@ -1,0 +1,43 @@
+{
+  "name": "express-api-starter",
+  "version": "0.0.1",
+  "description": "Properly tech sample",
+  "main": "api/server.js",
+  "author": {
+    "name": "Marta Paczkowska",
+    "email": "martabioinf@gmail.com"
+  },
+  "license": "ISC",
+  "private": true,
+  "scripts": {
+    "lint": "eslint ./api",
+    "logs": "pm2 logs my-app",
+    "serve": "pm2 start process.config.js --env production",
+    "start": "pm2 start process.config.js",
+    "stop": "pm2 delete process.config.js",
+    "test": "NODE_ENV=test jest",
+    "test:watch": "NODE_ENV=test jest --watchAll"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "helmet": "^3.18.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.3",
+    "validator": "^11.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^5.0.0",
+    "eslint-plugin-import": "^2.17.3",
+    "jest": "^24.9.0",
+    "node-mocks-http": "^1.8.0",
+    "pm2": "^3.5.1",
+    "supertest": "^4.0.2"
+  }
+}

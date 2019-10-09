@@ -15,12 +15,12 @@
 - `yarn logs`
 
 2. Start client 
--`cd client`
--`yarn start`
+- `cd client`
+- `yarn start`
 
 3. Run tests for server
--`yarn test:watch`
+- `yarn test:watch`
 
 4. Run tests for React
--`cd client`
--`yarn test`
+- `cd client`
+- `yarn test`

@@ -7,10 +7,8 @@ const Content = ({ price, address, bedrooms, bathrooms }) => {
     <>
       <h3>$ {price.toLocaleString('en')}</h3>
       <p>{address}</p>
-      <div className="row meta">
-        <div className="col-sm-auto">{pluralBed} {bedrooms}</div>
-        <div className="col-sm-auto">{pluralBath} {bathrooms}</div>
-      </div>
+      <h4>{pluralBed}: {bedrooms}</h4>
+      <h4>{pluralBath}: {bathrooms}</h4>
     </>
   );
 };

@@ -20,13 +20,14 @@ const HouseCard = ({
         handleHouseClick(id);
       }}
     >
+      <div className="card">
       <Image photo={photo} alt={alt} />
       <Content
         price={price}
         address={address}
         bedrooms={bedrooms}
         bathrooms={bathrooms}
-      />
+      /></div>
     </div>
   );
 };

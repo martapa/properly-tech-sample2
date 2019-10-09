@@ -1,5 +1,6 @@
-import React, { useState, useEffect, Fragment } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Helmet } from 'react-helmet';
 
 import Header from './components/Header';
 import Houses from './components/Houses';
@@ -34,6 +35,10 @@ function App() {
     fetchData();
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, document.body.scrollHeight);
+  }, [shownHouses]);
+
   const housesAmount = houses.length;
   return (
     <>
@@ -55,10 +60,17 @@ function App() {
         ) : null}
       </div>
       {activeHouse ? (
-        <Modal
-          house={activeHouse}
-          handleModalCloseClick={handleModalCloseClick}
-        />
+        <>
+          <Helmet
+            bodyAttributes={{
+              class: 'modal-open'
+            }}
+          />
+          <Modal
+            house={activeHouse}
+            handleModalCloseClick={handleModalCloseClick}
+          />
+        </>
       ) : null}
     </>
   );

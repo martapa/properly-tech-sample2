@@ -1,10 +1,11 @@
-import React from "react";
-import HouseCard from "./HouseCard";
+import React from 'react';
+import HouseCard from './HouseCard';
 
-const Houses = ({houses, handleHouseClick}) => {
+const Houses = ({ houses, handleHouseClick }) => {
   const housesList = houses;
   const houseCards = housesList.map(house => (
     <HouseCard
+      key={house._id}
       id={house._id}
       photo={house.photo}
       address={house.address}

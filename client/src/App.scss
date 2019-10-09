@@ -27,10 +27,18 @@ p {
   font-weight: 300;
   font-size: 15px;
 }
-col-sm-4 {
+.row {
+  justify-content: space-around;
+}
+.col-sm-4 {
   margin-top: 50px;
-  :hover {
-    background-color: yellow;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: #5e6572;
+  border-radius: 5px;
+  padding-top: 20px;
+  &:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 }
 

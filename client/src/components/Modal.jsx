@@ -2,6 +2,8 @@ import React from 'react';
 import Image from './Image';
 
 const Modal = ({ house, handleModalCloseClick }) => {
+  const alt = `House at ${house.address} with ${house.bedrooms} bedrooms and ${house.bathrooms} bathrooms priced at ${house.price}`
+
   return (
     <>
       <div
@@ -33,7 +35,7 @@ const Modal = ({ house, handleModalCloseClick }) => {
             </div>
             <div class="modal-body">
               <div className="col-sm-auto">
-                <Image photo={house.photo} alt="House picture" />
+                <Image photo={house.photo} alt={alt} />
                 <h3>$ {house.price.toLocaleString('en')}</h3>
                 <p>{house.address}</p>
                 <p>

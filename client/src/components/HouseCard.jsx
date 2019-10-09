@@ -12,6 +12,7 @@ const HouseCard = ({
   price,
   handleHouseClick
 }) => {
+  const alt = `House at ${address} with ${bedrooms} bedrooms and ${bathrooms} bathrooms priced at ${price}`
   return (
     <div
       className="col-sm-4"
@@ -19,7 +20,7 @@ const HouseCard = ({
         handleHouseClick(id);
       }}
     >
-      <Image photo={photo} alt="House picture" />
+      <Image photo={photo} alt={alt} />
       <Content
         price={price}
         address={address}

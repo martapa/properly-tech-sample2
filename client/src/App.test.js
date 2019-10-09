@@ -1,38 +1,28 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { mount, shallow } from 'enzyme';
 import App from './App';
+import Header from './components/Header';
+import Houses from './components/Houses';
+import expectExport from 'expect';
 
 describe('App component test with Enzyme', () => {
   it('renders without crashing', () => {
-    shallow(<App />);
+    const wrapper = shallow(<App />);
+
+    expect(wrapper.exists()).toBe(true);
   });
-  it('checks for button', () => {
-    const wrapper = shallow(<App />)
-    expect(wrapper.find('.my-button').length).toBe(1)
-  })
+  it('should contain one Header', () => {
+    const wrapper = shallow(<App />);
+
+    expect(wrapper.find(Header).exists()).toBe(true);
+    expect(wrapper.find(Header).exists()).toBe(true);
+    expect(wrapper.find(Header).props().title).toBe(
+      'App that displays some data'
+    );
+  });
+
+  it('should contain Houses', () => {
+    const wrapper = shallow(<App />);
+    expect(wrapper.find(Houses).exists()).toBe(true);
+  });
 });
-
-// describe('<App />', () => {
-//   let wrapper;
-//   const setState = jest.fn();
-//   const useStateSpy = jest.spyOn(React, 'useState');
-//   useStateSpy.mockImplementation(init => [init, setState]);
-
-//   beforeEach(() => {
-//     wrapper = shallow(<App />);
-//   });
-
-//   afterEach(() => {
-//     jest.clearAllMocks();
-//   });
-
-//   describe('Load more, ', () => {
-//     it('calls set number with 3', () => {
-//       wrapper
-//         .find('.my-button')
-//         .props()
-//         .onClick();
-//       expect(setState).toHaveBeenCalledWith(3);
-//     });
-//   });
-// });

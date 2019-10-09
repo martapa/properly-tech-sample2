@@ -11,7 +11,7 @@ const Modal = ({ house, handleModalCloseClick }) => {
       <div
         className="modal fade show"
         id="exampleModalLong"
-        tabindex="-1"
+        tabIndex="-1"
         role="dialog"
         aria-labelledby="exampleModalLongTitle"
         aria-hidden="true"

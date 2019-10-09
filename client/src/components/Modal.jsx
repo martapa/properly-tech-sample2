@@ -2,8 +2,10 @@ import React from 'react';
 import Image from './Image';
 
 const Modal = ({ house, handleModalCloseClick }) => {
-  const alt = `House at ${house.address} with ${house.bedrooms} bedrooms and ${house.bathrooms} bathrooms priced at ${house.price}`
-
+  const pluralBed = house.bedrooms === 1 ? "Bedroom" : "Bedrooms"
+  const pluralBath = house.bathrooms === 1 ? "Bathroom" : "Bathrooms"
+  const alt = `House at ${house.address} with ${house.bedrooms} ${pluralBed} and ${house.bathrooms} ${pluralBath} priced at ${house.price}`
+  
   return (
     <>
       <div

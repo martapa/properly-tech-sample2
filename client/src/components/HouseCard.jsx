@@ -12,7 +12,7 @@ const HouseCard = ({
   price,
   handleHouseClick
 }) => {
-  const alt = `House at ${address} with ${bedrooms} bedrooms and ${bathrooms} bathrooms priced at ${price}`
+  const alt = `House at ${address} with ${bedrooms} bedrooms and ${bathrooms} bathrooms priced at ${price}`;
   return (
     <div
       className="col-sm-4"

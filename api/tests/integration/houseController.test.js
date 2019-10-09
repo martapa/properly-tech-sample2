@@ -1,6 +1,6 @@
 const request = require('supertest');
 
-const router = require('../../api/router');
+const router = require('../../router');
 
 const endpoint = '/api/house';
 

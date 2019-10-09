@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+import Image from './Image';
 
 const Modal = ({ house, handleModalCloseClick }) => {
   return (
@@ -10,7 +11,7 @@ const Modal = ({ house, handleModalCloseClick }) => {
         role="dialog"
         aria-labelledby="exampleModalLongTitle"
         aria-hidden="true"
-        style={{ display: "block" }}
+        style={{ display: 'block' }}
       >
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -18,7 +19,6 @@ const Modal = ({ house, handleModalCloseClick }) => {
               <h5 class="modal-title" id="exampleModalLongTitle">
                 House details
               </h5>
-
               <button
                 type="button"
                 class="close"
@@ -33,13 +33,13 @@ const Modal = ({ house, handleModalCloseClick }) => {
             </div>
             <div class="modal-body">
               <div className="col-sm-auto">
-                <div className="image">
-                  <img src={house.photo} alt="House"></img>
-                </div>
-                <h3>$ {house.price.toLocaleString("en")}</h3>
+                <Image photo={house.photo} alt="House picture" />
+                <h3>$ {house.price.toLocaleString('en')}</h3>
                 <p>{house.address}</p>
-                <p>{house.floorSpace.toLocaleString("en")} m<sup>2</sup></p>
-                <p style={{ fontSize: "12px" }}>{house.description}</p>
+                <p>
+                  {house.floorSpace.toLocaleString('en')} m<sup>2</sup>
+                </p>
+                <p style={{ fontSize: '12px' }}>{house.description}</p>
               </div>
             </div>
           </div>

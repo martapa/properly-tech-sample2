@@ -16,7 +16,7 @@
     "start": "pm2 start process.config.js",
     "stop": "pm2 delete process.config.js",
     "test": "NODE_ENV=test jest",
-    "test:watch": "NODE_ENV=test jest --watchAll"
+    "test:watch": "NODE_ENV=test jest --watch api"
   },
   "dependencies": {
     "axios": "^0.19.0",
